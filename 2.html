@@ -8,15 +8,105 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </head>
 <body class="d-flex align-items-center justify-content-center vh-100 bg-light">
+<!--
+    <body>: Bu, HTML sayfasının ana içeriğini kapsayan etikettir. Sayfanın tamamının yapısı burada bulunur.
+
+    class="d-flex":
+    Flexbox özelliklerini kullanarak, sayfa içeriğini esnek bir şekilde hizalamayı sağlar.
+
+    align-items-center:
+    Bu sınıf, dikey hizalamayı ortalar. Yani, içeriği dikey olarak sayfanın ortasına yerleştirir.
+
+    justify-content-center:
+    Bu sınıf, yatay hizalamayı ortalar. Flexbox kullanarak öğeleri yatayda ortalar.
+
+    vh-100:
+    Bu sınıf, yüksekliği %100 yapar, yani sayfanın tamamını kaplar.
+
+    bg-light:
+    Bu sınıf, sayfanın arka plan rengini açık gri yapar.
+-->
 
 <div class="card shadow p-4 rounded" style="max-width: 600px; width: 100%;">
+    <!--
+     <div>: Bu, bir blok düzeyinde kapsayıcı öğedir. İçerik gruplamak, düzenlemek ve stil vermek için kullanılır.
+    class="card":
+    Bu, Bootstrap'ın card sınıfıdır.
+    Kartlar, içerikleri belirli bir kutu içinde düzenlemek için kullanılan bileşenlerdir.
+
+    shadow:
+    Bu sınıf, kartın etrafına gölge ekler.
+
+    p-4:
+    Bu sınıf, kartın içindeki boşluğu (padding) düzenler.
+    Bu, kartın içeriğinin kenarlardan uzak durmasını sağlar.
+
+    rounded:
+    Bu sınıf, kartın kenarlarını yuvarlatır.
+
+    style="max-width: 600px; width: 100%;":
+    max-width: 600px;: Kartın genişliğini en fazla 600px olarak sınırlar.
+    width: 100%;: Kartın genişliğini bulunduğu kapsayıcının genişliğine göre %100 yapar.
+    -->
     <h3 class="text-center mb-3">Bilgi Formu</h3>
+    <!--class="text-center":
+    Bootstrap sınıfıdır ve bu sınıf, metni yatayda ortalar. Yani, bu başlık sayfanın ortasında hizalanacak.
+
+    mb-3:
+    Yine Bootstrap sınıfıdır ve "margin-bottom" (alt boşluk) ekler.
+    mb-3, başlığın alt kısmında 1.5rem (yaklaşık 24px) kadar boşluk bırakır.
+    Bu, başlık ile altındaki öğeler arasındaki mesafeyi ayarlar.
+    -->
+
     <form>
         <!-- Ad ve Soyad -->
-        <div class="row g-2 mb-3">
+        <div class="row g-2 mb-5">
+            <!--
+             class="row": Bu, Bootstrap sınıfıdır ve bir satır oluşturur.
+             g-2: Bu sınıf, satır içindeki sütunlar arasındaki boşluğu ayarlar.
+             mb-5: Bu sınıf, sütun grubunun alt kısmında 3rem (yaklaşık 48px) kadar boşluk bırakır.
+             -->
             <div class="col-md-6">
+                <!--
+                class="col-md-6":
+
+                Bu, Bootstrap'ın grid sistemine ait bir sınıftır.
+                col-: Bu, bir kolon oluşturduğunu belirtir.
+                md: Bu, medium (orta büyüklükteki) cihazlar için olan bir ayarlamadır.
+                Yani, ekran genişliği 768px ve daha geniş cihazlarda bu kolon, belirtilen genişlik oranında yer kaplar.
+                6: Bu, 12'lik grid sistemine göre kolonun 6 birim genişliğinde olduğunu belirtir.
+                Bootstrap grid sistemi, sayfayı 12 eşit sütuna böler.
+                col-md-6 kullanarak, bu kolon ekranın yarısını (6/12 = 50%) kaplar.
+                Yani, ekranın genişliğine bağlı olarak bu kolon orta büyüklükte cihazlarda ekranın yarısını kaplar.
+
+                -->
                 <label for="name" class="form-label">Ad</label>
+                <!--
+                <label> etiketi, form elemanları için etiket sağlar ve genellikle bir input, select, textarea
+                gibi form öğelerine açıklama eklemek için kullanılır.
+                for="name":for özelliği, bu etiketi hangi form öğesiyle ilişkilendirdiğimizi belirtir.
+                Buradaki name değeri, sayfadaki id="name" özelliğine sahip bir form öğesiyle ilişkilidir.
+                Bu, form öğesinin kullanıcı tarafından tıklanarak kolayca seçilmesini sağlar.
+                class="form-label": Bootstrap'ın sağladığı bir sınıftır. Bu sınıf, etiketin stilini düzenler.
+                -->
                 <input type="text" class="form-control" id="name" placeholder="Adınızı girin">
+                <!--
+                <input>:<input> etiketi, kullanıcıdan veri almak için kullanılan form elemanıdır.
+                Bu etiket, çeşitli türlerde olabilir (metin kutusu, buton, onay kutusu, vb.).
+                Burada, kullanıcıdan metin almayı amaçlayan bir giriş alanı oluşturulmuştur.
+
+                type="text": özelliği, bu giriş alanının metin türünde olduğunu belirtir.
+                class="form-control":Bu, Bootstrap sınıfıdır. form-control sınıfı, form öğelerine stil ekler.
+                Bu sınıf, metin kutusunun genişliğini ve görünümünü Bootstrap'ın tasarımına uygun şekilde ayarlar.
+                id="name":bu öğeye benzersiz bir kimlik atar.
+                Bu kimlik, özellikle JavaScript ile bu öğeye erişmek ve işlem yapmak için kullanılır.
+                Aynı zamanda, label etiketleri ile ilişkilendirilen öğeleri bağlamak için de kullanılır
+                (örneğin, daha önceki soruda gördüğümüz gibi <label for="name">).
+
+                placeholder="Adınızı girin": placeholder özelliği, giriş alanında yer tutucu (placeholder) metni gösterir.
+                Bu metin, kullanıcı herhangi bir şey yazmadan önce kutunun içinde görünür ve kullanıcıya ne tür bilgi girmesi gerektiğini belirtir.
+                -->
+
             </div>
             <div class="col-md-6">
                 <label for="surname" class="form-label">Soyad</label>
@@ -28,6 +118,22 @@
         <div class="mb-3">
             <label for="city" class="form-label">Şehir</label>
             <select class="form-select" id="city">
+                <!--
+                    <select> etiketi, kullanıcıya birden fazla seçenek arasından seçim yapma imkanı veren bir form öğesidir.
+                    Bu öğe, genellikle bir açılır liste (dropdown menu) oluşturur.
+                    Kullanıcı, bu listeyi tıklayarak açar ve listedeki öğelerden birini seçer.
+
+                    class="form-select":
+                    Bu, Bootstrap sınıfıdır. form-select sınıfı, açılır listeyi stilize eder ve Bootstrap'ın tasarımına uygun hale getirir.
+                    Bu sınıf sayesinde liste, uyumlu ve şık bir şekilde görünür.
+                    Aynı zamanda, kullanıcı etkileşimini geliştiren bazı özellikler de ekler
+                    (örneğin, genişlik, kenarlıklar ve yazı tipi düzenlemeleri).
+
+                    id="city":id özelliği, bu öğeye benzersiz bir kimlik atar. Burada, id değeri city olarak belirlenmiştir.
+                    Bu, özellikle JavaScript ile bu öğeye erişmek ve işlem yapmak için kullanılır.
+                    Aynı zamanda, formda <label> etiketleri ile ilişkilendirilmişse, etiketin bu öğeye bağlanmasını sağlar
+                    (örneğin, <label for="city">).
+                 -->
                 <option selected>Seçiniz...</option>
                 <option value="1">İstanbul</option>
                 <option value="2">Ankara</option>
