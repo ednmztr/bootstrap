@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)
+echo 'export PATH="/opt/homebrew/bin:$PATH"' >> ~/.zshrc
+source ~/.zshrc
+
+
+Git Config Ayarlari
+git config --global user.name "kendi kullanci adiniz"
+git config --global user.email "email adres"
+
+https://git-scm.com/downloads/mac
+
+
+
+
+1.	Soru: Aşağıdaki HTML etiketlerinden hangisi bir başlık (heading) oluşturmak için kullanılır?
+a) <p>
+  b) <h1>
+  c) <div>
+  d) <span>
+Cevap: b) <h1>
+2.	Soru: CSS'de bir öğenin arka plan rengini değiştirmek için hangi özelliği kullanırız?
+a) color
+b) background-color
+c) text-color
+d) background
+Cevap: b) background-color
+3.	Soru: JavaScript'te bir değişken tanımlamak için hangi anahtar kelimeyi kullanırız?
+a) variable
+b) var
+c) int
+d) string
+Cevap: b) var
+4.	Soru: HTML'de bir bağlantı (link) oluşturmak için hangi etiketi kullanırız?
+a) <link>
+b) <href>
+c) <a>
+d) <url>
+Cevap: c) <a>
+5.	Soru: CSS'de bir öğenin yazı tipini değiştirmek için hangi özelliği kullanırız?
+a) font-family
+b) text-font
+c) font
+d) typeface
+Cevap: a) font-family
+6.	Soru: JavaScript'te bir fonksiyon tanımlamak için hangi anahtar kelimeyi kullanırız?
+a) function
+b) method
+c) procedure
+d) define
+Cevap: a) function
+7.	Soru: HTML'de bir resim eklemek için hangi etiketi kullanırız?
+a) <image>
+b) <img>
+c) <picture>
+d) <src>
+Cevap: b) <img>
+8.	Soru: CSS'de bir öğenin boyutunu (genişlik ve yükseklik) ayarlamak için hangi özellikleri kullanırız?
+a) size
+b) dimension
+c) width ve height
+d) scale
+Cevap: c) width ve height
+9.	Soru: JavaScript'te bir dizinin (array) uzunluğunu bulmak için hangi özelliği kullanırız?
+a) length
+b) size
+c) count
+d) total
+Cevap: a) length
+10.	Soru: HTML'de bir form oluşturmak için hangi etiketi kullanırız?
+a) <form>
+b) <input>
+c) <form-group>
+d) <form-container>
+Cevap: a) <form>
+
+11. Soru:HTML5'in yeni semantik etiketlerinden (örneğin, <article>, <aside>, <nav>) üçünü açıklayınız ve ne amaçla kullanıldıklarını belirtiniz.
+12. Soru:CSS'de "flexbox" kullanarak bir web sayfasının düzenini nasıl sağlayabiliriz? Flexbox'ın temel özelliklerini ve kullanımını örneklerle açıklayınız.
+13. Soru:JavaScript'te bir döngü (loop) kullanarak bir dizideki tüm elemanları nasıl işleyebiliriz? for veya while döngülerinden birini kullanarak örnek bir kod yazınız.
+14	Soru:HTML'de bir form oluşturunuz ve bu formdaki verileri JavaScript ile nasıl alıp işleyebileceğinizi açıklayınız.
+15	Soru: CSS'de "responsive design" (duyarlı tasarım) yazınız.
+16	Soru:JavaScript'te DOM (Document Object Model) nedir ve bir HTML öğesinin içeriğini veya stilini JavaScript ile nasıl değiştirebiliriz?
+17	Soru:JavaScript’te localStorage ve sessionStorage arasındaki fark nedir? Hangi durumlarda hangisi kullanılır?
+
+
+
+
+
+
+18	Soru:Aşağıdaki CSS kodu ne yapar? Açıklayınız.
+.box {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+19	Soru:JavaScript'te olay dinleyicileri (event listeners) nedir ve bir HTML öğesine bir olay (örneğin, tıklama) nasıl ekleyebiliriz? Örnek bir kod yazınız.
+
+20	Soru:Aşağıdaki JavaScript kodunun çıktısı nedir?
+let x = 10;
+let y = (x > 5) ? "Büyük" : "Küçük";
+console.log(y);
+
+
+https://excalidraw.com/
+https://excalidraw.com/#json=Bu4laL8ZueqGqUukU419L,wC0LEOQnMo-BwFc7-mVJSw
+
+   https://themeforest.net/category/site-templates/personal/virtual-business-card?gad_source=1&gclid=CjwKCAiAt4C-BhBcEiwA8Kp0CWbv07xy0OP3YNCAErFYp45YrG9RL3LIyYBwGgqYTolSf4xKws9DahoCXkEQAvD_BwE
+
+
+
+
+
+
+Bootstrap'ın 12 sütunluk grid sistemi, sabit sütun genişlikleri tanımlamak için kullanılan bir kılavuzdur. Yani, örneğin col-1, col-2 gibi sınıflarla sütun genişliğini belirlediğinizde, bu genişliklerin toplamı 12 sütuna eşit olmak üzere düzenlenir.
+
+Ancak, sadece .col sınıfını kullanırsanız, Bootstrap bu sütunlara "flex: 1" uygulayarak mevcut alanı eşit olarak böler. Bu durumda, sütun sayısı 12 ile sınırlandırılmaz; kaç tane sütun eklerseniz, hepsi eşit oranda genişler.
+
+Kodunuzda, ilk sütun col-1 kullanırken geri kalan sütunlarda .col var. Bu nedenle, belirli bir sütunun genişliği sabit (1/12), diğerleri ise esnek davranıyor. Sonuç olarak, tarayıcı sütunları sayısal olarak 12 ile sınırlandırmaz ve eklediğiniz her sütunu göstermeye çalışır.
+
+Özetle:
+
+col-1 gibi sınıflarla 12 sütunlu düzen tanımlayabilirsiniz.
+.col sınıfı ise mevcut alanı esnek ve eşit şekilde böler, sütun sayısı 12 ile sınırlı değildir.
+Bu yüzden, tarayıcıda 13 sütun veya daha fazla sütun görebilirsiniz.
+
+
+https://excalidraw.com/#json=KlU0E4_-UXvGT-FAP7ePU,eBOTc-RVcESRRzOKDc-Y2g
+https://excalidraw.com/#json=SlHpagKsxR_KdOdpfCGY-,i7dKtKPOiMQwUJpXPdP2wQ
+https://excalidraw.com/#json=SlHpagKsxR_KdOdpfCGY-,i7dKtKPOiMQwUJpXPdP2wQ
+
+
+https://startbootstrap.com/previews/heroic-features
+https://startbootstrap.com/previews/small-business
+https://startbootstrap.com/previews/resume
+
+</body>
+</html>

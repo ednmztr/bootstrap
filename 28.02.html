@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap Akışkan Carousel Örneği</title>
+    <!-- Bootstrap CSS Bağlantısı -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEJ4QJkV0M2W1O4VjTtHJjfhKlc3xz6dGVk3Awl5SaW9B87AA6XQpZYOz1QAt" crossorigin="anonymous">
+</head>
+<body>
+
+<!-- Carousel Başlangıcı -->
+<div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    </div>
+    <div class="carousel-inner">
+        <!-- Akışkan Resim 1 -->
+        <div class="carousel-item active">
+            <img src="https://via.placeholder.com/800x400?text=Resim+1" class="d-block w-100" alt="Resim 1">
+        </div>
+        <!-- Akışkan Resim 2 -->
+        <div class="carousel-item">
+            <img src="https://via.placeholder.com/800x400?text=Resim+2" class="d-block w-100" alt="Resim 2">
+        </div>
+        <!-- Akışkan Resim 3 -->
+        <div class="carousel-item">
+            <img src="https://via.placeholder.com/800x400?text=Resim+3" class="d-block w-100" alt="Resim 3">
+        </div>
+    </div>
+    <!-- Önceki ve Sonraki Butonları -->
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Önceki</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Sonraki</span>
+    </button>
+</div>
+<!-- Carousel Sonu -->
+
+<!-- Bootstrap JS ve Bağımlılıkları -->
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz4fnFO9gybFY2AhHqK0aJQ8U5FJs2exgsU4R1jW1ck2S3/Yt95Aftkjf5" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js" integrity="sha384-pzjw8f+ua7Kw1TIq0v8Fqtn5p7T1K59jX+xzckFqH9o5zSb8tsT2Vfvh7WgsDA9L" crossorigin="anonymous"></script>
+</body>
+</html>
